@@ -1,0 +1,32 @@
+.settings/
+.project
+.classpath
+bin/
+.mvn/
+classes/
+*.iml
+target/
+out/
+*.depend
+
+### STS ###
+.apt_generated
+.factorypath
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+# MAC
+*.DS_Store
+# VSCode
+.vscode
+# JRebel
+rebel*.xml
+
+# log
+log/
+logs/
+*.log
