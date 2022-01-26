@@ -1,12 +1,3 @@
----
-title: 设计模式-工厂模式.md
-copyright: true
-categories: 设计模式
-tag: 工厂模式
-date: 2022-01-25 20:53:20
-
----
-
 # 设计模式-工厂模式
 
 ## 一、详解

@@ -5,7 +5,7 @@ import cn.deschen.designPattern.factoryPattern.factory.TransportFactory;
 
 /**
  * @Author hanbin_chen
- * @Description 工厂方法用例, 根据
+ * @Description 工厂方法用例
  * @Version V1.0.0
  */
 public class Demo {
