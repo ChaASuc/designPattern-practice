@@ -1,4 +1,4 @@
-package cn.deschen.designPattern.Prototype.entity;
+package cn.deschen.designPattern.prototype.entity;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,8 +1,8 @@
-package cn.deschen.designPattern.Prototype;
+package cn.deschen.designPattern.prototype;
 
-import cn.deschen.designPattern.Prototype.entity.AbstractFile;
-import cn.deschen.designPattern.Prototype.entity.File;
-import cn.deschen.designPattern.Prototype.entity.Folder;
+import cn.deschen.designPattern.prototype.entity.AbstractFile;
+import cn.deschen.designPattern.prototype.entity.File;
+import cn.deschen.designPattern.prototype.entity.Folder;
 
 /**
  * @Author hanbin_chen

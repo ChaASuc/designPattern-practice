@@ -1,4 +1,4 @@
-package cn.deschen.designPattern.Prototype.entity;
+package cn.deschen.designPattern.prototype.entity;
 
 /**
  * @Author hanbin_chen
