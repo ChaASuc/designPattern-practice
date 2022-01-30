@@ -1,6 +1,5 @@
 package cn.deschen.designPattern.singleton.reflect;
 
-import cn.deschen.designPattern.singleton.reflect.StaticInnerSingleton;
 import cn.deschen.designPattern.singleton.schema.EnumSingleton;
 
 import java.lang.reflect.Constructor;
