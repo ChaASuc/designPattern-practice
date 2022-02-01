@@ -15,9 +15,9 @@ public class Demo {
 
     public static void main(String[] args) {
         Storage ossStorage = new OssAdapter(new OssClient());
-        ossStorage.uploadFile("resource.txt", "resource.txt");
+        ossStorage.uploadFile("/resources", "resource.txt");
 
         Storage minioStorage = new MinioAdapter(new MinioClient());
-        minioStorage.uploadFile("resource.txt", "resource.txt");
+        minioStorage.uploadFile("/resources", "resource.txt");
     }
 }
