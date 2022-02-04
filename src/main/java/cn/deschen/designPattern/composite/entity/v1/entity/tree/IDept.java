@@ -5,15 +5,15 @@ package cn.deschen.designPattern.composite.entity.v1.entity.tree;
  * @Description 部门接口，提取部门需要展示的属性，同时方便以后部门类整改不受影响，保证可维护性
  * @Version V1.0.0
  */
-public interface IDept {
+public abstract class IDept {
 
-    Long getId();
+    public abstract Long getId();
 
-    String getName();
+    public abstract String getName();
 
-    Integer getLevel();
+    public abstract Integer getLevel();
 
-    Long getParentId();
+    public abstract Long getParentId();
 
-    Boolean isRoot();
+    public abstract Boolean isRoot();
 }

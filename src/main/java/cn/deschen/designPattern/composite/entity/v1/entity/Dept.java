@@ -7,7 +7,7 @@ import cn.deschen.designPattern.composite.entity.v1.entity.tree.IDept;
  * @Description 部门类 - 包含部门的信息
  * @Version V1.0.0
  */
-public class Dept implements IDept {
+public class Dept extends IDept {
 
     private Long id;
 

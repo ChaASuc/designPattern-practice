@@ -8,7 +8,7 @@ import java.util.List;
  * @Description 部门树 - 主要是管理部门类，组合形成部门树结构
  * @Version V1.0.0
  */
-public class DeptNode implements IDept {
+public class DeptNode extends IDept {
 
     private IDept dept;
 
