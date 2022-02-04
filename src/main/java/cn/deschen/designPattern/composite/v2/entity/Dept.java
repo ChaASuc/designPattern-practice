@@ -1,6 +1,6 @@
-package cn.deschen.designPattern.composite.entity.v2.entity;
+package cn.deschen.designPattern.composite.v2.entity;
 
-import cn.deschen.designPattern.composite.entity.v2.tree.node.NodeEntity;
+import cn.deschen.designPattern.composite.v2.tree.node.NodeEntity;
 
 /**
  * @Author hanbin_chen

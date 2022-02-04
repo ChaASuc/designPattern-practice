@@ -1,8 +1,8 @@
-package cn.deschen.designPattern.composite.entity.v2;
+package cn.deschen.designPattern.composite.v2;
 
-import cn.deschen.designPattern.composite.entity.v2.entity.Dept;
-import cn.deschen.designPattern.composite.entity.v2.tree.dept.DeptNode;
-import cn.deschen.designPattern.composite.entity.v2.tree.dept.DeptNodeBuilder;
+import cn.deschen.designPattern.composite.v2.entity.Dept;
+import cn.deschen.designPattern.composite.v2.tree.dept.DeptNode;
+import cn.deschen.designPattern.composite.v2.tree.dept.DeptNodeBuilder;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 

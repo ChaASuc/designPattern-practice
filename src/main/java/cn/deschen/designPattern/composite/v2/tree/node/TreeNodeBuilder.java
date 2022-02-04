@@ -1,4 +1,4 @@
-package cn.deschen.designPattern.composite.entity.v2.tree.node;
+package cn.deschen.designPattern.composite.v2.tree.node;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.*;

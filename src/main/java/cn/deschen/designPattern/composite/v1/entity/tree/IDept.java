@@ -1,4 +1,4 @@
-package cn.deschen.designPattern.composite.entity.v1.entity.tree;
+package cn.deschen.designPattern.composite.v1.entity.tree;
 
 /**
  * @Author hanbin_chen
