@@ -11,7 +11,7 @@ import cn.deschen.designPattern.composite.v2.tree.node.TreeNodeBuilder;
 public class DeptNodeBuilder extends TreeNodeBuilder<Dept, DeptNode> {
 
     @Override
-    protected DeptNode createNode(Dept dept) {
+    protected DeptNode parseNode(Dept dept) {
         return new DeptNode(dept);
     }
 }

@@ -29,7 +29,7 @@ public abstract class TreeNodeBuilder<E extends NodeEntity, N extends Node> {
         N root = null;
 
         for (E entity : entities) {
-            N node = createNode(entity);
+            N node = parseNode(entity);
             nodes.add(node);
             nodeMap.put(node.getId(), node);
             if (entity.isRoot()) {
@@ -49,7 +49,7 @@ public abstract class TreeNodeBuilder<E extends NodeEntity, N extends Node> {
         return root;
     }
 
-    protected abstract N createNode(E entity);
+    protected abstract N parseNode(E entity);
 
     /**
      * 通过增加栈来构建树 - 递归
@@ -62,7 +62,7 @@ public abstract class TreeNodeBuilder<E extends NodeEntity, N extends Node> {
         N root = null;
 
         for (E entity : entities) {
-            N node = createNode(entity);
+            N node = parseNode(entity);
             nodes.add(node);
             if (entity.isRoot()) {
                 root = node;
