@@ -31,13 +31,22 @@ public class FileManagerImpl implements FileManager {
     @Override
     public FileMemento getLastVersion(Long fileId) {
         List<FileMemento> fileMementos = FILE_MEMENTO_STORAGE.get(fileId);
-        Collections.sort(fileMementos, new Comparator<FileMemento>() {
-            @Override
-            public int compare(FileMemento o1, FileMemento o2) {
-                return o1.getTimestamp().compareTo(o2.getTimestamp());
-            }
-        }.reversed());
-
-        return fileMementos.get(0);
+        if (null == fileMementos || fileMementos.size() == 0) {
+            return null;
+        }
+        return fileMementos.get(fileMementos.size() - 1);
     }
+
+    @Override
+    public FileMemento rollbackPreVersion(Long fileId) {
+        List<FileMemento> fileMementos = FILE_MEMENTO_STORAGE.get(fileId);
+        if (null == fileMementos || fileMementos.size() == 0) {
+            return null;
+        }
+
+        FileMemento fileMemento = fileMementos.remove(fileMementos.size() - 1);
+
+        return fileMemento;
+    }
+
 }

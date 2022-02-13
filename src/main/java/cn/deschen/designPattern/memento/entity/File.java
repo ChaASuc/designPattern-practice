@@ -40,6 +40,9 @@ public class File {
     }
 
     public void restoreFromMemento(FileMemento fileMemento) {
+        if (null == fileMemento) {
+            return;
+        }
         this.fileId = fileMemento.getFileId();
         this.fileName = fileMemento.getFileName();
         this.fileSize = fileMemento.getFileSize();

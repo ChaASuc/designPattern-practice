@@ -20,8 +20,17 @@ public interface FileManager {
     /**
      * 获取最新一版文件
      *
-     * @param fileId
+     * @param fileId 文件标识
      * @return
      */
     FileMemento getLastVersion(Long fileId);
+
+    /**
+     * 回滚到上一版本
+     *
+     * @param fileId 文件标识
+     * @return
+     */
+    FileMemento rollbackPreVersion(Long fileId);
+
 }
