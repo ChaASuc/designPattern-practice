@@ -1,6 +1,6 @@
-package cn.deschen.designPattern.composite.entity;
+package cn.deschen.designPattern.composite.entity.v1.entity;
 
-import cn.deschen.designPattern.composite.entity.tree.IDept;
+import cn.deschen.designPattern.composite.entity.v1.entity.tree.IDept;
 
 /**
  * @Author hanbin_chen
@@ -13,14 +13,14 @@ public class Dept implements IDept {
 
     private String name;
 
-    private String level;
+    private Integer level;
 
     private Long parentId;
 
     public Dept() {
     }
 
-    public Dept(Long id, String name, String level, Long parentId) {
+    public Dept(Long id, String name, Integer level, Long parentId) {
         this.id = id;
         this.name = name;
         this.level = level;
@@ -38,7 +38,7 @@ public class Dept implements IDept {
     }
 
     @Override
-    public String getLevel() {
+    public Integer getLevel() {
         return level;
     }
 
@@ -60,7 +60,7 @@ public class Dept implements IDept {
         this.name = name;
     }
 
-    public void setLevel(String level) {
+    public void setLevel(Integer level) {
         this.level = level;
     }
 

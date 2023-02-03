@@ -1,6 +1,6 @@
-package cn.deschen.designPattern.composite.entity.tree;
+package cn.deschen.designPattern.composite.entity.v1.entity.tree;
 
-import cn.deschen.designPattern.composite.entity.Dept;
+import cn.deschen.designPattern.composite.entity.v1.entity.Dept;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -13,9 +13,9 @@ import java.util.stream.Collectors;
  * @Description 部门树构建
  * @Version V1.0.0
  */
-public class DeptTreeBuilder {
+public class DeptNodeBuilder {
 
-    public Map<Long, DeptNode> deptNodeMap = new HashMap<>();
+    public Map<Long, DeptNode> nodeMap = new HashMap<>();
 
     /**
      * 通过增加内存空间来构建树 - 遍历
@@ -24,17 +24,17 @@ public class DeptTreeBuilder {
      */
     public DeptNode buildByIncrMem(List<Dept> depts) {
         for (Dept dept : depts) {
-            deptNodeMap.put(dept.getId(), new DeptNode(dept));
+            nodeMap.put(dept.getId(), new DeptNode(dept));
         }
 
         DeptNode root = null;
 
-        for (DeptNode deptNode : deptNodeMap.values()) {
-            if (!deptNode.isRoot()) {
-                DeptNode parent = deptNodeMap.get(deptNode.getParentId());
-                parent.addNode(deptNode);
+        for (DeptNode node : nodeMap.values()) {
+            if (!node.isRoot()) {
+                DeptNode parent = nodeMap.get(node.getParentId());
+                parent.addNode(node);
             }else {
-                root = deptNode;
+                root = node;
             }
         }
 

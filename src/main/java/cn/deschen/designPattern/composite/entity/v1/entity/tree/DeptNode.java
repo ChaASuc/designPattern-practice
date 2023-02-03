@@ -1,4 +1,4 @@
-package cn.deschen.designPattern.composite.entity.tree;
+package cn.deschen.designPattern.composite.entity.v1.entity.tree;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,7 +30,7 @@ public class DeptNode implements IDept {
     }
 
     @Override
-    public String getLevel() {
+    public Integer getLevel() {
         return dept.getLevel();
     }
 
